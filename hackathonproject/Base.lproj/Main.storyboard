@@ -35,6 +35,17 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="xKl-5U-kjL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnk-5U-S6j">
+                                <rect key="frame" x="119" y="704" width="176" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Detect materials">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="NfS-ct-SEg" kind="show" id="00s-gE-BfH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="qHp-Ek-X2H"/>
@@ -323,6 +334,22 @@ Avoid single-use plastic
             </objects>
             <point key="canvasLocation" x="721.73913043478262" y="184.82142857142856"/>
         </scene>
+        <!--Material DetectionVC-->
+        <scene sceneID="gLb-dz-3Yi">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="NfS-ct-SEg" customClass="MaterialDetectionVC" customModule="hackathonproject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r8k-8y-IO4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="pbS-Sy-ADm"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="S48-Yt-iz0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nf8-aL-BWZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100" y="915"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="j5o-aC-KK0">
             <objects>
@@ -360,7 +387,7 @@ You will receive highly relevant, personalized information, such as services nea
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fsV-Lv-j1A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1476.8115942028987" y="-236.38392857142856"/>
+            <point key="canvasLocation" x="-1004" y="-886"/>
         </scene>
     </scenes>
     <resources>
