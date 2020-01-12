@@ -16,6 +16,7 @@
 		26BB794D23CB858D00A42469 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26BB794B23CB858D00A42469 /* LaunchScreen.storyboard */; };
 		26BB795823CB858E00A42469 /* hackathonprojectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BB795723CB858E00A42469 /* hackathonprojectTests.swift */; };
 		26BB796323CB858E00A42469 /* hackathonprojectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BB796223CB858E00A42469 /* hackathonprojectUITests.swift */; };
+		26BB797123CBB30100A42469 /* MaterialDetectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BB797023CBB30100A42469 /* MaterialDetectionVC.swift */; };
 		3D3B67F523CBB184005D77BC /* MaterialClassifier 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B67F423CBB184005D77BC /* MaterialClassifier 1.mlmodel */; };
 		3D3B67FC23CBB83B005D77BC /* kollektif in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B67FB23CBB83B005D77BC /* kollektif */; };
 		3D3B67FD23CBB83B005D77BC /* kollektif in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B67FB23CBB83B005D77BC /* kollektif */; };
@@ -55,6 +56,7 @@
 		26BB795E23CB858E00A42469 /* hackathonprojectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hackathonprojectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26BB796223CB858E00A42469 /* hackathonprojectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackathonprojectUITests.swift; sourceTree = "<group>"; };
 		26BB796423CB858E00A42469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26BB797023CBB30100A42469 /* MaterialDetectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialDetectionVC.swift; sourceTree = "<group>"; };
 		3D3B67F423CBB184005D77BC /* MaterialClassifier 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "MaterialClassifier 1.mlmodel"; sourceTree = "<group>"; };
 		3D3B67FB23CBB83B005D77BC /* kollektif */ = {isa = PBXFileReference; lastKnownFileType = folder; path = kollektif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 				26BB793F23CB858C00A42469 /* SceneDelegate.swift */,
 				26BB794123CB858C00A42469 /* ViewController.swift */,
 				26BB794323CB858C00A42469 /* Main.storyboard */,
+				26BB797023CBB30100A42469 /* MaterialDetectionVC.swift */,
 				3D3B67F423CBB184005D77BC /* MaterialClassifier 1.mlmodel */,
 				26BB794923CB858D00A42469 /* Assets.xcassets */,
 				26BB794B23CB858D00A42469 /* LaunchScreen.storyboard */,
@@ -278,6 +281,7 @@
 				26BB793E23CB858C00A42469 /* AppDelegate.swift in Sources */,
 				26BB794023CB858C00A42469 /* SceneDelegate.swift in Sources */,
 				3D3B67F523CBB184005D77BC /* MaterialClassifier 1.mlmodel in Sources */,
+				26BB797123CBB30100A42469 /* MaterialDetectionVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SFQ86X7XD;
 				INFOPLIST_FILE = hackathonproject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -468,6 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SFQ86X7XD;
 				INFOPLIST_FILE = hackathonproject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
