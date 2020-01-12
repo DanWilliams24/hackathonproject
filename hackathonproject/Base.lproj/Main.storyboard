@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7bs-cx-fS8">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -15,18 +15,18 @@
         <!--View Controller-->
         <scene sceneID="nRw-d0-qvf">
             <objects>
-                <viewController id="7bs-cx-fS8" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="7bs-cx-fS8" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hjw-mE-OEx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launch-screen-logo" translatesAutoresizingMaskIntoConstraints="NO" id="kNb-eh-pZu">
                                 <rect key="frame" x="-204" y="-46" width="823" height="989"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXZ-DD-KfF">
-                                <rect key="frame" x="95" y="644" width="224" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="644" width="414" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="See message history">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -36,25 +36,25 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnk-5U-S6j">
-                                <rect key="frame" x="119" y="704" width="176" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="694" width="414" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Detect materials">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="NfS-ct-SEg" kind="show" id="00s-gE-BfH"/>
+                                    <segue destination="ZWX-ZU-mnf" kind="show" id="K7A-uW-yiV"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="qHp-Ek-X2H"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Tks-nw-kpv"/>
+                    <navigationItem key="navigationItem" id="nh7-XK-0fF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qLm-NJ-KTt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1004" y="185"/>
+            <point key="canvasLocation" x="-94.20289855072464" y="184.82142857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -64,14 +64,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KYr-es-Xcd">
-                                <rect key="frame" x="20" y="188" width="374" height="674"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="1000000000000000" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLv-we-5Fd">
+                                <rect key="frame" x="28" y="174" width="340" height="688"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="1000000000000000" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9J-MK-RS6">
-                                        <rect key="frame" x="8" y="48" width="358" height="618"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <mutableString key="text">Thank you 
+                                <mutableString key="text">Thank you 
 → We appreciate that you took the time out of your day to think about 9 million people who die from pollution-related diseases (The Lancet Commission). 
 
 → While we wait for big businesses and governments to act, we will teach you about little things you can do to contribute to solving this environmental health issue you unconsciously contribute to. 
@@ -140,59 +136,57 @@ See the difference at https://youtu.be/-WCNJNTSFMk and reuse thermoset plastics!
 Avoid single-use plastic
 → Visit shops that sell products from large containers and allow you to bring your own containers, such as glass jugs, bottles, bowls, and tupperware. Instead of buying food sealed in plastic, try shopping at bulk shops that require you to bring a container to get into the habit of doing so.
 </mutableString>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message history" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61U-Cg-HJa">
-                                        <rect key="frame" x="91" y="4" width="206" height="36"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="25"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <viewLayoutGuide key="contentLayoutGuide" id="OfB-td-Oj1"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="Eh9-HA-3Xk"/>
-                            </scrollView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nhu-v5-I9G">
-                                <rect key="frame" x="234" y="126" width="118" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evR-jC-6a9">
+                                <rect key="frame" x="40" y="60" width="65" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIG-Ha-5Wp">
+                                <rect key="frame" x="113" y="75" width="189" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6pM-wi-tap">
+                                <rect key="frame" x="187" y="127" width="118" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter your zipcode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGo-lK-s5m">
-                                <rect key="frame" x="20" y="125" width="206" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter your zipcode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="603-hr-VCh">
+                                <rect key="frame" x="13" y="126" width="168" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0M-Yz-cLa">
-                                <rect key="frame" x="360" y="122" width="32" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDv-nk-Hzl">
+                                <rect key="frame" x="313" y="127" width="73" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Go"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" red="0.3078980744" green="0.7184489369" blue="0.45387905839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Go" image="magnifyingglass" catalog="system">
+                                    <color key="titleColor" red="0.3078980744" green="0.7184489369" blue="0.45387905839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                </state>
                                 <connections>
-                                    <segue destination="y5W-gs-ZwP" kind="show" id="DBx-bH-0ie"/>
+                                    <segue destination="y5W-gs-ZwP" kind="show" id="oEk-za-ak8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LivEco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diF-3l-QtJ">
-                                <rect key="frame" x="101" y="62" width="212" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="yxb-Nn-si9"/>
+                    <navigationItem key="navigationItem" id="KNo-ll-pXW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-100.00000000000001" y="184.82142857142856"/>
+            <point key="canvasLocation" x="810.14492753623199" y="184.82142857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NEw-WL-aLx">
@@ -202,60 +196,10 @@ Avoid single-use plastic
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DEh-Lq-H3l">
-                                <rect key="frame" x="20" y="118" width="374" height="744"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="1000000000000000" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f44-S2-YK4">
+                                <rect key="frame" x="36" y="112" width="332" height="750"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="1000000000000000" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7p6-3U-GWM">
-                                        <rect key="frame" x="8" y="48" width="358" height="688"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <mutableString key="text">Thank you 
-→ We appreciate that you took the time out of your day to think about 9 million people who die from pollution-related diseases (The Lancet Commission). 
-
-→ While we wait for big businesses and governments to act, we will teach you about little things you can do to contribute to solving this environmental health issue you unconsciously contribute to. 
-
-→ Not only does this benefit children, families, and people around the world, but our suggestions may also improve your personal health by being mindful of your waste and seeking better alternatives for daily products. 
-
-******You will receive highly relevant, personalized information, such as services near you, according to the zipcode you entered******
-
-Why?
-→ Many illnesses are caused by air, land, and water pollution or improper disposal, including but not limited to lung cancer, respiratory diseases, ischaemic heart disease, chronic obstructive pulmonary disease, and acute lower respiratory infections in children
-
-→ Learn more about the effects of landfills, pollution, and improper waste disposal below:
-https://www.who.int/airpollution/ambient/health-impacts/en/
-https://www.health.ny.gov/environmental/outdoors/air/landfill_gas.htm
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1637771/
-
-And stay subscribed to hear about how you can positively contribute.
-Disposing of old electronics
-→ Recycling is more than paper and plastic. Do you know where old/broken electronics go?
-→ Electronics products can also contain toxic substances, such as lead, mercury, and cadmium, which all must be disposed of carefully
-→ Recycle cell phones and batteries at uBreakiFix Rockville (1532 Rockville Pike Rockville, MD 20852)
-→ Other electronics can be recycled your nearest Best Buy (1200 Rockville Pike, Rockville, MD 20852). Before you recycle, see what your tech is worth by calling Best Buy (301-984-1479) and if it qualifies for store credit.
-
-Recycling cardboard
-→ Did you know that boxes with adhesive labels are treated differently than other cardboard boxes?
-
-Remember to:
-→ Clean and empty packages and other boxes before recycling.
-→ Remove any labels, plastic, or decals that may be on or inside your boxes.
-
-Start a compost
-→ Subscribe to a compost service near you such as Compost Cab and start disposing of food waste properly.
-
-You can compost:
-→ fruit and vegetable scraps.
-→ tea bags, coffee grounds.
-→ egg shells.
-→ grass cuttings, prunings and leaves.
-→ small amounts of shredded paper and soft cardboard.
-→ animal hair and bones.
-→ vacuum dust from woollen carpets.
-→ garden and pond plants.
-→ and other natural, biodegradable items
-
-
-Reuse what you can
+                                <mutableString key="text">Reuse what you can
 Keep things like cereal boxes, plastic bottles, bags, wrappers, caps, buckets, and similar objects you would usually throw out for home or school projects. Here are a few DIY ideas:
 → Cereal boxes - aquarium arts and craft with kids, paper recycling collection bin
 → Plastic bottles - planters, water filter
@@ -273,18 +217,8 @@ motor oil, antifreeze and pesticides
 → polystyrene “clamshell” containers
 → packaging from small electronics and toys
 → jewel cases from CDs and DVDs - how to dispose or reuse jewel cases
-→ flexible plastic trays and individual containers for plants and seedlings, including 4-pack and → 6-pack plant containers
-→ plastic shower curtains
-→ plastic straws
-→ tennis ball canisters
-→ containers holding syringes or other sharps. (Also, never place syringes or other sharps directly in the blue bin.)
-
-Soft vs. hard plastic
-Thermoset plastics are made for chemical/heat resistance and structural integrity. So, they are irreversibly hardened and burn when heat is applied. So when it is put into a recycling bin, it is usually sent to be incinerated instead of reshaped.
-→ Detergent containers
-→ Shampoo and conditioner bottles
-→ Hair product tubs
-→ Low-density flexible foam used in upholstery, bedding, automotive and truck seating, and novel inorganic plant substrates for roof or wall gardens
+→ flexible plastic trays 
+substrates for roof or wall gardens
 → Low density elastomers used in footwear
 → Hard solid plastics used as electronic instrument bezels and structural parts
 → Flexible plastics used as straps and bands
@@ -295,72 +229,80 @@ Thermoplastics are softer when heated and hard when cooled, meaning they can be 
 → Milk containers
 → Most household materials with the exception of technical and electronic materials
 
-See the difference here and reuse thermoset plastics!
+See the difference at https://youtu.be/-WCNJNTSFMk and reuse thermoset plastics!
 
 
 Avoid single-use plastic
 → Visit shops that sell products from large containers and allow you to bring your own containers, such as glass jugs, bottles, bowls, and tupperware. Instead of buying food sealed in plastic, try shopping at bulk shops that require you to bring a container to get into the habit of doing so.
 
 → Near 20852, you can visit Whole Foods (11355 Woodglen Dr, Rockville, MD 20852) and remember to bring your own containers when you shop.
+
+
 </mutableString>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message history" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4V-On-kQ7">
-                                        <rect key="frame" x="91" y="4" width="206" height="36"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="25"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <viewLayoutGuide key="contentLayoutGuide" id="UaT-VB-ALY"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="Ko5-v8-25V"/>
-                            </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LivEco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAc-A2-qvQ">
-                                <rect key="frame" x="101" y="62" width="212" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHm-9w-mfr">
-                                <rect key="frame" x="20" y="62" width="73" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location Based Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsG-Ky-Gbg">
+                                <rect key="frame" x="96" y="76" width="222" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9M-1n-dQC">
+                                <rect key="frame" x="36" y="64" width="78" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="7bs-cx-fS8" kind="show" id="Lh9-ju-TZL"/>
+                                    <segue destination="7bs-cx-fS8" kind="show" id="8xO-cT-1II"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="lix-lG-Pzh"/>
                     </view>
-                    <navigationItem key="navigationItem" id="eG6-OH-Hu2"/>
+                    <navigationItem key="navigationItem" id="e1G-SI-Eb7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="knM-MX-AlT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="721.73913043478262" y="184.82142857142856"/>
+            <point key="canvasLocation" x="1631.8840579710147" y="184.82142857142856"/>
         </scene>
         <!--Material DetectionVC-->
-        <scene sceneID="gLb-dz-3Yi">
+        <scene sceneID="RzN-ON-Q8a">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="NfS-ct-SEg" customClass="MaterialDetectionVC" customModule="hackathonproject" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="r8k-8y-IO4">
+                <viewController modalPresentationStyle="fullScreen" id="ZWX-ZU-mnf" customClass="MaterialDetectionVC" customModule="hackathonproject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cBb-rA-pGr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LABEL" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="1000000" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0y-x5-gMq">
+                                <rect key="frame" x="0.0" y="64" width="414" height="134"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWF-je-r3p">
+                                <rect key="frame" x="20" y="64" width="65" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="7bs-cx-fS8" kind="show" id="x8d-CJ-C5s"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="pbS-Sy-ADm"/>
+                        <viewLayoutGuide key="safeArea" id="xvy-g0-74w"/>
                     </view>
-                    <navigationItem key="navigationItem" id="S48-Yt-iz0"/>
+                    <navigationItem key="navigationItem" id="yYe-va-46f"/>
+                    <connections>
+                        <outlet property="detectionLabel" destination="N0y-x5-gMq" id="4DV-rC-A2B"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nf8-aL-BWZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zFg-Ry-1S0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-100" y="915"/>
+            <point key="canvasLocation" x="40.579710144927539" y="896.65178571428567"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="j5o-aC-KK0">
@@ -380,14 +322,14 @@ Avoid single-use plastic
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="100000" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbG-u9-vxD">
                                 <rect key="frame" x="30" y="137" width="364" height="431"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">We appreciate that you took the time out of your day to think about 9 million people who die from pollution-related diseases (The Lancet Commission). 
+                                <string key="text">We appreciate that you took the time out of your day to think about 9 million people who die from pollution-related diseases (The Lancet Commission). 
 
 While we wait for big businesses and governments to act, we will teach you about little things you can do to contribute to solving this environmental health issue you unconsciously contribute to. 
 
 Not only does this benefit children, families, and people around the world, but our suggestions may also improve your personal health by being mindful of your waste and seeking better alternatives for daily products. 
 
 You will receive highly relevant, personalized information, such as services near you, according to the zipcode you entered.
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -404,8 +346,9 @@ You will receive highly relevant, personalized information, such as services nea
     </scenes>
     <resources>
         <image name="launch-screen-logo" width="828" height="1292"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Lh9-ju-TZL"/>
+        <segue reference="8xO-cT-1II"/>
     </inferredMetricsTieBreakers>
 </document>

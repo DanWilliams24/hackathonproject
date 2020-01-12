@@ -11,7 +11,8 @@ import AVKit
 import Vision
 
 class MaterialDetectionVC: UIViewController,AVCaptureVideoDataOutputSampleBufferDelegate {
-
+    @IBOutlet weak var detectionLabel: UILabel!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,7 +31,7 @@ class MaterialDetectionVC: UIViewController,AVCaptureVideoDataOutputSampleBuffer
         let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         view.layer.addSublayer(previewLayer)
         previewLayer.frame = view.frame
-        
+        previewLayer.addSublayer(detectionLabel.layer)
         
         let dataOutput = AVCaptureVideoDataOutput()
         dataOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "videoQueue"))
@@ -40,6 +41,12 @@ class MaterialDetectionVC: UIViewController,AVCaptureVideoDataOutputSampleBuffer
         
         
     }
+    
+    
+    func changeText(text:String){
+        self.detectionLabel.text = text
+    }
+    
     
 
     
@@ -54,6 +61,19 @@ class MaterialDetectionVC: UIViewController,AVCaptureVideoDataOutputSampleBuffer
             guard let firstObservation = results.first else{return}
             
             print(firstObservation.identifier,firstObservation.confidence)
+            DispatchQueue.main.async {
+                if(firstObservation.identifier == "cardboard"){
+                    self.changeText(text: "Recycle with paper")
+                }else if(firstObservation.identifier == "cardboard-with-label"){
+                    self.changeText(text: "remove  labels and recycle with paper")
+
+                }else if(firstObservation.identifier == "soft_plastic"){
+                    self.changeText(text: "recycle with other plastic")
+
+                }else if(firstObservation.identifier == "electronics"){
+                    self.changeText(text: "take to nearest Best Buy (1200 Rockville Pike, Rockville, MD 20852)")
+                }
+            }
         }
         try? VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:]).perform([request])
     }
